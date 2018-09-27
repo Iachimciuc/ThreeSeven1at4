@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class Client {
     public static void main(String[] args) throws IOException {
         SMPPSession smppSession = new SMPPSession();
-        SMPPSession smppSession2 = new SMPPSession();
         SMPPSessionSender smppSessionSender = new SMPPSessionSender(smppSession);
         final BindParameter bindParameter = new BindParameter(BindType.BIND_TRX, "out", "out", "cp", TypeOfNumber.UNKNOWN, NumberingPlanIndicator.UNKNOWN, null);
         smppSession.connectAndBind("192.168.0.22", 7777, bindParameter);

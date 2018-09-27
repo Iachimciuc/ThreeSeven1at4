@@ -40,7 +40,7 @@ public class SMPPSessionSender {
         try {
             if (session.getSessionState() != SessionState.CLOSED) {
                 final ESMClass esmClass = new ESMClass();
-                final String scheduleDeliveryTime = "000"+Long.toString(LocalDateTime.now().atZone(ZoneId.systemDefault())
+                final String scheduleDeliveryTime = "000" + Long.toString(LocalDateTime.now().atZone(ZoneId.systemDefault())
                         .toInstant().toEpochMilli());
                 final RegisteredDelivery registeredDelivery = new RegisteredDelivery(SMSCDeliveryReceipt.DEFAULT);
                 final byte[] messageBytes = message.getBytes();
