@@ -1,3 +1,5 @@
+package SMTP;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -7,7 +9,7 @@ import java.util.Properties;
 public class brain {
     private static final String SMTP_HOST_NAME = "smtp.gmail.com";
     private static final String SMTP_PORT = "465";
-    private static final String emailMsgTxt = "82";
+    private static final String emailMsgTxt = "Good luck";
     private static final String emailSubjectTxt = "good morning";
     private static final String emailFromAddress = "bogdania567@gmail.com";
     private static final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
